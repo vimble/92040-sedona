@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Демьянюк](https://up.htmlacademy.ru/adaptive/7/user/92040).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Петров] (https://htmlacademy.ru/profile/id42390)
 
 ---
 
