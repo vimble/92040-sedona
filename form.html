@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <ul>
+          <li class="main-nav__item"><a href="#">Главная</a></li>
+          <li class="main-nav__item"><a href="#">Фото и видео</a></li>
+          <li class="main-nav__item"><a href="#">Форма отзыва</a></li>
+          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+        </ul>
+      </nav>
+      <div class="top-panel">
+        <a class="top-panel__logo" href="#">
+          <img src="http://placehold.it/102x83" alt="City of Sedona" width="102" height="83">
+        </a>
+        <button class="top-panel__toggle" type="button">Show/close menu</button>
+      </div>
+    </header>
+    <div class="promo">
+      <img class="promo__textimage" src="http://placehold.it/229x39" alt="Welcome to the gorgeous SEDONA" width="229" height="39">
+    </div>
+    <main>
+      <header class="feedback-header">
+        <h1 class="feedback-header__title">Оставьте свой отзыв</h1>
+        <p class="feedback-header__desc">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </header>
+      <form class="feedback-form" action="#" method="post">
+        <fieldset>
+          <legend class="feedback-form__caption">Представьтесь, пожалуйста:</legend>
+          <div class="feedback-form__wrapper">
+            <label class="feedback-form__label" for="feedbackName">Имя</label>
+            <input class="feedback-form__input" type="text" name="name" value="Петр" id="feedbackName">
+          </div>
+          <div class="feedback-form__wrapper">
+            <label class="feedback-form__label" for="feedbackSurname">Фамилия</label>
+            <input class="feedback-form__input" type="text" name="surname" value="Иванов" id="feedbackSurname">
+          </div>
+          <div class="feedback-form__wrapper">
+            <label class="feedback-form__label"  for="feedbackPatro">Отчество</label>
+            <input class="feedback-form__input" type="text" name="patro" value="Александрович" id="feedbackPatro">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class="feedback-form__caption">Контактная информация:</legend>
+          <div class="feedback-form__wrapper">
+            <label class="feedback-form__label  feedback-form__label--top" for="feedbackPhone">Контактный телефон:</label>
+            <input class="feedback-form__input  feedback-form__input--phone" type="text" name="phone" placeholder="Введите телефон" id="feedbackPhone">
+          </div>
+          <div class="feedback-form__wrapper">
+            <label class="feedback-form__label  feedback-form__label--top" for="feedbackEmail">Электронная почта:</label>
+            <input class="feedback-form__input  feedback-form__input--email" type="text" name="email" placeholder="Введите e-mail" id="feedbackEmail">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class="feedback-form__caption">Ваше общее впечатление:</legend>
+          <div class="feedback-form__wrapper">
+            <input class="feedback-form__radio" type="radio" name="impression" id="feedbackPositiveAtt" checked>
+            <label class="feedback-form__label feedback-form__label--radio" for="feedbackPositiveAtt">Скорее положительное</label>
+          </div>
+          <div class="feedback-form__wrapper">
+            <input class="feedback-form__radio" type="radio" name="impression" id="feedbackNegativeAtt">
+            <label class="feedback-form__label feedback-form__label--radio" for="feedbackNegativeAtt">Скорее отрицательное</label>
+          </div>
+          <div class="feedback-form__wrapper">
+            <input class="feedback-form__radio" type="radio" name="impression" id="feedbackNeutralAtt">
+            <label class="feedback-form__label feedback-form__label--radio" for="feedbackNeutralAtt">Затрудняюсь ответить</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class="feedback-form__caption">Посещенные достопримечательности:</legend>
+          <div class="feedback-form__wrapper">
+            <input class="feedback-form__checkbox" type="checkbox" name="devil-bridge" id="feedbackDevilBridge" checked>
+            <label class="feedback-form__label feedback-form__label--checkbox" for="feedbackDevilBridge">Мост Дьявола</label>
+          </div>
+          <div class="feedback-form__wrapper">
+            <input class="feedback-form__checkbox" type="checkbox" name="slide-park" id="feedbackSlidePark" checked>
+            <label class="feedback-form__label feedback-form__label--checkbox" for="feedbackSlidePark">Слайд-парк</label>
+          </div>
+          <div class="feedback-form__wrapper">
+            <input class="feedback-form__checkbox" type="checkbox" name="mountain-bell" id="feedbackMountainBell">
+            <label class="feedback-form__label feedback-form__label--checkbox" for="feedbackMountainBell">Гора-Колокол</label>
+          </div>
+          <div class="feedback-form__wrapper">
+            <input class="feedback-form__checkbox" type="checkbox" name="red-rocks" id="feedbackRedRocks" checked>
+            <label class="feedback-form__label feedback-form__label--checkbox" for="feedbackRedRocks">Красные скалы</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class="feedback-form__caption">Опишите свои эмоции:</legend>
+          <textarea class="feedback-form__textarea" name="message" id="feedbackMessage" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+        <button class="feedback-form__submit btn" type="submit">Отправить отзыв</button>
+      </form>
+    </main>
+    <footer class="main-footer">
+      <b class="main-footer__tag">#visitsedona</b>
+      <ul class="socials">
+        <li class="socials__item  socials__item--twitter"><a href="#">in twitter</a></li>
+        <li class="socials__item  socials__item--facebook"><a href="#">in facebook</a></li>
+        <li class="socials__item  socials__item--youtube"><a href="#">in youtube</a></li>
+      </ul>
+      <div class="author">
+        Разработано
+        <a class="author__link" href="#">
+          HtmlAcademy
+          <img src="http://placehold.it/27x34" alt="HtmlAcademy" width="27" height="34">
+        </a>
+      </div>
+    </footer>
+    <div class="popup popup--failure">
+      <b class="popup__title">Что-то пошло не так!</b>
+      <p class="popup__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="popup__btn btn" type="button">Ок</button>
+    </div>
+    <div class="popup popup--success">
+      <b class="popup__title">Ваш отзыв отправлен!</b>
+      <p class="popup__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="popup__btn btn popup__btn--closebg" type="button">Закрыть окно</button>
+    </div>
+  </body>
+</html>
