@@ -1,0 +1,7 @@
+.socials {
+  @include unstyledlist();
+}
+
+.socials__item {
+  display: inline-block;
+}

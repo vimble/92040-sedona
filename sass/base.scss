@@ -1,0 +1,20 @@
+body {
+  font-family: $ptsans;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  background: white;
+  color: $body-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+}

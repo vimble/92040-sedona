@@ -1,0 +1,104 @@
+.feedback-form {
+  margin-bottom: 80px;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.feedback-form fieldset {
+  @include noindent();
+  border: 0;
+}
+
+.feedback-form__caption {
+  @include noindent();
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $title-color;
+}
+
+.feedback-form__wrapper {
+  text-align: left;
+}
+
+.feedback-form__label {
+  line-height: 26px;
+
+  &--left {
+    margin-right: 16px;
+  }
+
+  &--top {
+    display: block;
+    margin-bottom: 9px;
+  }
+
+  &--radio {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: none;
+    color: $title-color;
+  }
+
+  &--checkbox {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: none;
+    color: $title-color;
+  }
+}
+
+.feedback-form__input {
+  padding: 19px 21px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  background-color: $input-bg;
+  border: 0;
+  outline: 0;
+  @include placeholder();
+}
+
+.feedback-form__error {
+  display: block;
+  margin-bottom: 20px;
+  text-transform: none;
+  color: $form-error-color;
+}
+
+.feedback-form__radio {
+  margin-bottom: 50px;
+}
+
+.feedback-form__checkbox {
+  margin-bottom: 63px;
+}
+
+.feedback-form__textarea {
+  padding: 19px 21px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  background-color: $input-bg;
+  border: 0;
+  outline: 0;
+  @include placeholder();
+}
+
+.feedback-form__submit {
+  padding: 16px 47px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: white;
+  background-color: $blue;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}

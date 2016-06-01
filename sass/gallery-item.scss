@@ -1,0 +1,31 @@
+.gallery-item {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.gallery-item__image {
+  @include noindent();
+  text-align: center;
+}
+
+.gallery-item__name {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.gallery-item__author {
+  display: block;
+  text-transform: none;
+}
+
+.gallery-item__author cite {
+  font-style: normal;
+}
+
+.gallery-item__like {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}

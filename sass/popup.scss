@@ -1,0 +1,23 @@
+.popup__title {
+  font-size: 18px;
+  line-height: 26px;
+  color: $title-color;
+}
+
+.popup__btn {
+  padding: 16px 47px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: white;
+  background-color: $blue;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.popup__closebg {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
