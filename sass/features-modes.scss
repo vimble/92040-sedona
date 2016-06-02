@@ -1,0 +1,18 @@
+.features-modes {
+  @include unstyledlist();
+  padding-top: 40px;
+  text-align: left;
+  line-height: 21px;
+  background-color: white;
+  color: #333333;
+}
+
+.features-modes__item {
+  padding-left: 70px;
+}
+
+.features-modes__item h4 {
+  font-size: 18px;
+  line-height: 26px;
+  color: $title-color;
+}

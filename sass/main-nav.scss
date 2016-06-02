@@ -1,0 +1,14 @@
+.main-nav__list {
+  @include unstyledlist();
+}
+
+.main-nav__item a {
+  display: block;
+  padding: 7.8px 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+  text-decoration: none;
+  color: white;
+  background: $blue;
+}

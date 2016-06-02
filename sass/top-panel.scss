@@ -1,0 +1,14 @@
+.top-panel {
+  position: relative;
+}
+
+.top-panel__logo {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.top-panel__toggle {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+}
