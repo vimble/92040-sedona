@@ -8,19 +8,19 @@
   <body>
     <div class="wrapper">
       <header class="main-header">
-        <nav class="main-nav">
+        <nav class="main-nav  main-nav--nojs">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Главная</a></li>
-            <li class="main-nav__item"><a href="#">Фото и видео</a></li>
-            <li class="main-nav__item"><a href="#">Форма отзыва</a></li>
-            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--active" href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
           </ul>
         </nav>
         <div class="top-panel">
-          <a class="top-panel__logo" href="#">
+          <a class="top-panel__logo" href="index.html">
             <img src="img/logo-sedona-mobile.svg" alt="City of Sedona" width="102" height="83">
           </a>
-          <button class="top-panel__toggle" type="button">BTN</button>
+          <button class="top-panel__toggle  top-panel__toggle--open  top-panel__toggle--nojs" type="button">BTN</button>
         </div>
       </header>
       <div class="promo">
@@ -32,9 +32,11 @@
           <p class="features__desc">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
           <ul class="features-list">
             <li class="features-reason  features-reason--blue">
-              <h3 class="features-reason__name features-reason__name--white">Настоящий городок</h3>
-              <span class="features-reason__number">&ndash; №1 &ndash;</span>
-              <p class="features-reason__desc">Седона не атракцион для туристов, там течет своя жизнь</p>
+              <div class="features-reason__info">
+                <h3 class="features-reason__name features-reason__name--white">Настоящий городок</h3>
+                <span class="features-reason__number">&ndash; №1 &ndash;</span>
+                <p class="features-reason__desc">Седона не атракцион для туристов, там течет своя жизнь</p>
+              </div>
               <figure class="features-reason__image">
                 <img src="img/photo-city@1x.jpg" alt="Настоящий городок" width="320" height="260">
               </figure>
@@ -54,9 +56,11 @@
               </ul>
             </li>
             <li class="features-reason  features-reason--blue">
-              <h3 class="features-reason__name features-reason__name--white">Там есть мост дьявола</h3>
-              <span class="features-reason__number">&ndash; №2 &ndash;</span>
-              <p class="features-reason__desc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <div class="features-reason__info  features-reason__info--right">
+                <h3 class="features-reason__name features-reason__name--white">Там есть мост дьявола</h3>
+                <span class="features-reason__number">&ndash; №2 &ndash;</span>
+                <p class="features-reason__desc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              </div>
               <figure class="features-reason__image">
                 <img src="http://placehold.it/320x260" alt="Там есть мост дьявола" width="320" height="260">
               </figure>
@@ -103,5 +107,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/custom.js"></script>
   </body>
 </html>

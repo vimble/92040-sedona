@@ -1,5 +1,13 @@
 .main-footer__tag {
+  display: block;
   font-size: 21px;
   font-weight: 26px;
   color: $title-color;
+}
+
+@media #{$tablet-width} {
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+  }
 }

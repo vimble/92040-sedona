@@ -17,4 +17,12 @@ img {
   margin: 0 auto;
   text-align: center;
   box-sizing: border-box;
+
+  @media #{$tablet-width} {
+    width: 768px;
+  }
+
+  @media #{$desktop-width} {
+    width: 1200px;
+  }
 }
