@@ -4,3 +4,13 @@
   line-height: 26px;
   color: $title-color;
 }
+
+
+@media #{$tablet-width} {
+
+  .media {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}

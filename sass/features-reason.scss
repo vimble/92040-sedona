@@ -25,3 +25,33 @@
 .features-reason__image {
   @include noindent();
 }
+
+
+@media #{$tablet-width} {
+  .features-reason {
+    width: 33%;
+
+    &--blue {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+
+  .features-reason__info {
+    width: 33%;
+
+    &--right {
+      order: 1;
+    }
+
+  }
+
+  .features-reason__image {
+    width: 67%;
+    background-color: rgba(255,0,0, 0.5);
+  }
+
+}

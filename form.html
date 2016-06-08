@@ -8,19 +8,19 @@
   <body>
     <div class="wrapper">
       <header class="main-header">
-        <nav class="main-nav">
+        <nav class="main-nav  main-nav--nojs">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Главная</a></li>
-            <li class="main-nav__item"><a href="#">Фото и видео</a></li>
-            <li class="main-nav__item"><a href="#">Форма отзыва</a></li>
-            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--active" href="form.html">Форма отзыва</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
           </ul>
         </nav>
         <div class="top-panel">
-          <a class="top-panel__logo" href="#">
+          <a class="top-panel__logo" href="index.html">
             <img src="img/logo-sedona-mobile.svg" alt="City of Sedona" width="102" height="83">
           </a>
-          <button class="top-panel__toggle" type="button">BTN</button>
+          <button class="top-panel__toggle  top-panel__toggle--open  top-panel__toggle--nojs" type="button">BTN</button>
         </div>
       </header>
       <div class="promo">
@@ -32,7 +32,8 @@
           <p class="feedback-header__desc">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
         <form class="feedback-form" action="#" method="post">
-          <fieldset>
+        <!-- fieldset1 FULL NAME -->
+          <fieldset class="feedback-form__fieldset">
             <legend class="feedback-form__caption">Представьтесь, пожалуйста:</legend>
             <div class="feedback-form__wrapper">
               <label class="feedback-form__label feedback-form__label--left" for="feedbackName">Имя:</label>
@@ -47,19 +48,21 @@
               <input class="feedback-form__input" type="text" name="patro" value="Александрович" id="feedbackPatro">
             </div>
           </fieldset>
-          <fieldset>
+          <!-- fieldset2 CONTACT INFO-->
+          <fieldset class="feedback-form__fieldset  feedback-form__fieldset--fullwidth">
             <legend class="feedback-form__caption">Контактная информация:</legend>
             <div class="feedback-form__wrapper">
               <label class="feedback-form__label  feedback-form__label--top" for="feedbackPhone">Контактный телефон:</label>
-              <input class="feedback-form__input  feedback-form__input--phone" type="text" name="phone" placeholder="Введите телефон" id="feedbackPhone">
+              <input class="feedback-form__input  feedback-form__input--phone  feedback-form__input--fullwidth" type="text" name="phone" placeholder="Введите телефон" id="feedbackPhone">
               <span class="feedback-form__error">Ошибка, перепроверьте номер</span>
             </div>
             <div class="feedback-form__wrapper">
               <label class="feedback-form__label  feedback-form__label--top" for="feedbackEmail">Электронная почта:</label>
-              <input class="feedback-form__input  feedback-form__input--email" type="text" name="email" placeholder="Введите e-mail" id="feedbackEmail">
+              <input class="feedback-form__input  feedback-form__input--email feedback-form__input--fullwidth" type="text" name="email" placeholder="Введите e-mail" id="feedbackEmail">
             </div>
           </fieldset>
-          <fieldset>
+          <!-- fieldset3 IMPRESSION-->
+          <fieldset class="feedback-form__fieldset  feedback-form__fieldset--order">
             <legend class="feedback-form__caption">Ваше общее впечатление:</legend>
             <div class="feedback-form__wrapper">
               <input class="feedback-form__radio" type="radio" name="impression" id="feedbackPositiveAtt" checked>
@@ -74,7 +77,8 @@
               <label class="feedback-form__label feedback-form__label--radio" for="feedbackNeutralAtt">Затрудняюсь ответить</label>
             </div>
           </fieldset>
-          <fieldset>
+          <!-- fieldset4 SIGHTS -->
+          <fieldset class="feedback-form__fieldset  feedback-form__fieldset--fullwidth  feedback-form__fieldset--center">
             <legend class="feedback-form__caption">Посещенные достопримечательности:</legend>
             <div class="feedback-form__wrapper">
               <input class="feedback-form__checkbox" type="checkbox" name="devil-bridge" id="feedbackDevilBridge" checked>
@@ -93,11 +97,13 @@
               <label class="feedback-form__label feedback-form__label--checkbox" for="feedbackRedRocks">Красные скалы</label>
             </div>
           </fieldset>
-          <fieldset>
+          <!-- fieldset5 MESSAGE -->
+          <fieldset class="feedback-form__fieldset  feedback-form__fieldset--fullwidth">
             <legend class="feedback-form__caption">Опишите свои эмоции:</legend>
-            <textarea class="feedback-form__textarea" name="message" id="feedbackMessage" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="feedback-form__textarea  feedback-form__textarea--fullwidth" name="message" id="feedbackMessage" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="feedback-form__submit btn" type="submit">Отправить отзыв</button>
+          <span class="feedback-form__hint">* — обязательные поля</span>
         </form>
       </main>
       <footer class="main-footer">
@@ -128,5 +134,6 @@
         </div>
       </div>
     </div>
+    <script src="js/custom.js"></script>
   </body>
 </html>

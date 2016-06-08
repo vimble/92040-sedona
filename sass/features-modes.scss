@@ -16,3 +16,15 @@
   line-height: 26px;
   color: $title-color;
 }
+
+@media #{$tablet-width} {
+  .features-modes {
+    display: flex;
+    width: 100%;
+    text-align: center;
+  }
+
+  .features-modes__item {
+    padding-left: 0;
+  }
+}
