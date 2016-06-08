@@ -49,8 +49,19 @@
 
   }
 
+  .features-reason__name {
+    font-size: 21px;
+
+    &--white { 
+      padding-top: 0;
+      padding-left: 67px;
+      padding-right: 67px;
+    }
+  }
+
   .features-reason__image {
     width: 67%;
+    min-height: 256px;  //tmp height
     background-color: rgba(255,0,0, 0.5);
   }
 
