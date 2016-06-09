@@ -1,16 +1,74 @@
+.media {
+  text-align: center;
+}
+
 .media__title {
+  @include noindent();
+  margin-bottom: 25px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   color: $title-color;
 }
 
+.media__desc {
+  position: relative;
+  @include noindent();
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 28px;
+  margin-bottom: 21px;
+  text-align: center;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
 
 @media #{$tablet-width} {
-
   .media {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 60px;
+    margin-bottom: 55px;
+  }
+
+  .media__title {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .media__desc {
+    width: 440px;
+    margin: 0 auto;
+    margin-bottom: 41px;
+
+    &:after {
+      border: 0;
+    }
+  }
+}
+
+//PC
+@media #{$desktop-width} {
+  .media {
+    padding: 0;
+    margin-bottom: 70px;
+  }
+
+  .media__title {
+    width: 100%;
+  }
+
+  .media__desc {
+    margin-bottom: 45px;
   }
 
 }

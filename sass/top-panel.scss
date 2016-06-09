@@ -1,80 +1,24 @@
 .top-panel {
   position: relative;
+  min-height: 56px;
+  text-align: right;
+  background-color: white;
 }
 
 .top-panel__logo {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.top-panel__toggle {
   position: absolute;
-  right: 20px;
-  top: 18px;
-  width: 23px;
-  font-size: 0;
-  background-color: transparent;
-  border: 0;
-  outline: 0;
-  cursor: pointer;
-
-  &--closed:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 23px;
-    height: 4px;
-    background-color: $blue;
-    box-shadow: 0 8px 0 0 $blue,
-                0 16px 0 0 $blue;
-  }
-
-  &--open {
-    position: absolute;
-    top: -208px;
-    right: 22px;
-    display: block;
-    width: 24px;
-    height: 24px;
-    background-color: transparent;
-  }
-
-  &--open:before,
-  &--open:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 28px;
-    height: 4px;
-    background-color: white;
-  }
-
-  &--open:before {
-    transform: rotate(45deg);
-  }
-
-  &--open:after {
-    transform: rotate(-45deg);
-  }
-
-  &--nojs {
-    display: none;
-  }
-
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
 }
 
 @media #{$tablet-width} {
   .top-panel {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
+    min-height: auto;
   }
 
-  .top-panel__toggle {
-    display: none;
-  }
+
 
 }

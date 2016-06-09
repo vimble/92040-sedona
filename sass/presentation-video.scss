@@ -1,0 +1,28 @@
+.presentation-video__img {
+  display: block;
+}
+
+@media #{$tablet-width} {
+  .presentation-video {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+
+  .presentation-video__img {
+    display: block;
+    width: 100%;
+    min-height: 500px; //tmp
+    height: auto;
+  }
+}
+
+@media #{$desktop-width} {
+  .presentation-video {
+    padding: 0;
+  }
+
+  .presentation-video__img {
+    max-height: 500px;
+  }
+}

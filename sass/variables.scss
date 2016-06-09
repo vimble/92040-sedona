@@ -2,11 +2,12 @@
 $body-color: #333333;
 $title-color: black;
 $blue: #81b3d2;
+$blue-hover: #669ec0;
+$blue-active: #5496bd;
 
 $mainmenu-active: #766357;
 $mainmenu-active-hover: #604e43;
-$mobile-menu-hover: #669ec0;
-$mobile-menu-active: #5496bd;
+
 
 $input-bg: #f2f2f2;
 $placeholder-color: black;
@@ -19,5 +20,6 @@ $ptsans: "PTsans", Arial, sans-serif;
 $mobile-width-only: "(max-width: 480px)";
 $tablet-width: "(min-width: 768px)";
 $desktop-width: "(min-width: 1200px)";
+$retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";
 
 

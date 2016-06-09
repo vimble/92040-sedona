@@ -1,6 +1,6 @@
 .features-modes {
   @include unstyledlist();
-  padding-top: 40px;
+  padding-top: 35px;
   text-align: left;
   line-height: 21px;
   background-color: white;
@@ -8,23 +8,128 @@
 }
 
 .features-modes__item {
+  position: relative;
   padding-left: 70px;
+  padding-right: 20px;
+  margin-bottom: 27px;
+
+  &--home:before {
+    content: "";
+    position: absolute;
+    left: 21px;
+    top: -10px;
+    width: 39px;
+    height: 37px;
+    background: url("../img/icon-house.svg") no-repeat;
+    background-size: 39px 37px;
+  }
+
+  &--gift:before {
+    content: "";
+    position: absolute;
+    left: 25px;
+    top: -11px;
+    width: 32px;
+    height: 38px;
+    background: url("../img/icon-gift.svg") no-repeat;
+    background-size: 32px 38px;
+  }
+
+   &--food:before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: -5px;
+    width: 40px;
+    height: 35px;
+    background: url("../img/icon-burger.svg") no-repeat;
+    background-size: 40px 35px;
+  }
 }
 
-.features-modes__item h4 {
+.features-modes__name {
+  @include noindent();
+  margin-bottom: 15px;
   font-size: 18px;
   line-height: 26px;
   color: $title-color;
 }
 
+.features-modes__desc {
+  @include noindent();
+}
+
+
+// TABLET WIDTH
 @media #{$tablet-width} {
   .features-modes {
     display: flex;
-    width: 100%;
     text-align: center;
+    width: 100%;
+    padding-top: 33px;
   }
 
   .features-modes__item {
-    padding-left: 0;
+    max-width: (100% / 3);
+    padding: 0;
+    padding-top: 126px;
+
+    &--gift {
+      order: 1;
+    }
+
+    &--home:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 27px;
+      width: 75px;
+      height: 72px;
+      background: url("../img/icon-house.svg") no-repeat;
+      background-size: 75px 72px;
+      transform: translateX(-50%);
+    }
+
+    &--gift:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 24px;
+      width: 64px;
+      height: 75px;
+      background: url("../img/icon-gift.svg") no-repeat;
+      background-size: 64px 75px;
+      transform: translateX(-50%);
+    }
+
+     &--food:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 30px;
+      width: 77px;
+      height: 68px;
+      background: url("../img/icon-burger.svg") no-repeat;
+      background-size: 77px 68px;
+      transform: translateX(-50%);
+    }
+  }
+
+  .features-modes__name {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+
+  .features-modes__desc {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+// DESKTOP WIDTH
+@media #{$desktop-width} {
+  .features-modes__item {
+    padding-top: 127px;
+    margin-bottom: 55px;
   }
 }
