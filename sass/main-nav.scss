@@ -1,63 +1,75 @@
 .main-nav__list {
+  position: relative;
   @include unstyledlist();
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    height: 7px;
+    background: linear-gradient(to top, #1b262c, transparent);
+    opacity: 0.2;
+  }
 }
 
 .main-nav__link {
   display: block;
-  padding: 7.8px 0;
+  padding: 7.4px 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 40px;
   text-decoration: none;
+  text-align: center;
   color: white;
   background: $blue;
-  border-bottom: 1px solid #5496bd;
+  box-shadow: 0 0px 0 1px #9ac2db,
+              0 -1px 0 1px #678fa8;
 
   &:hover {
-    background-color: $mobile-menu-hover;
+    background-color: $blue-hover;
   }
 
   &:active {
-    background-color: $mobile-menu-active;
+    background-color: $blue-active;
     color: rgba(255,255,255, 0.3);
   }
-
 }
 
 .main-nav {
-
   &--closed {
     display: none;
-  }
-
-  &--opened {
-    animation: fly 0.3s;
   }
 }
 
 @media #{$tablet-width} {
   .main-nav {
     background-color: white;
-    
+
     &--closed {
       display: block;
     }
-
-    &--opened {
-      animation: none;
-    }
-
   }
 
   .main-nav__list {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 49px;
-    margin-right: 26px;
+    font-size: 0;
+    &:after {
+      display: none;
+    }
+  }
+
+  .main-nav__item {
+    display: inline-block;
+    width: 20%;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: center;
   }
 
   .main-nav__item:nth-child(2) {
-    margin-right: 185px;
+    margin-right: 20%;
   }
 
   .main-nav__link {
@@ -67,6 +79,7 @@
     background-color: white;
     color: black;
     border-bottom: 0;
+    box-shadow: none;
 
     &:hover {
       color: $blue;
@@ -88,18 +101,5 @@
     &--active:active {
       color: rgba(96,78,67, 0.3);
     }
-  }
-}
-
-
-@keyframes fly {
-  0% {
-    -webkit-transform: translateY(-2000px);
-    transform: translateY(-2000px);
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
   }
 }

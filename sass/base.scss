@@ -3,7 +3,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
-  background: white;
+  background: #f2f2f2;
   color: $body-color;
 }
 
@@ -13,16 +13,32 @@ img {
 }
 
 .wrapper {
-  width: 320px;
-  margin: 0 auto;
-  text-align: center;
-  box-sizing: border-box;
-
-  @media #{$tablet-width} {
-    width: 768px;
-  }
+  position: relative;
+  min-width: 320px;
+  background-color: white;
 
   @media #{$desktop-width} {
-    width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0, 0.2);
   }
+}
+
+.btn {
+  background-color: #5496bd;
+  color: white;
+  transition: background-color 0.3s ease-in;
+}
+
+.btn:hover {
+  background-color: #3e84ae;
+}
+
+.btn:active {
+  color: rgba(255,255,255, 0.3);
+}
+
+.btn:disabled,
+.btn.disabled {
+  background-color: #e5e5e5;
 }

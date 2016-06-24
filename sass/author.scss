@@ -1,4 +1,53 @@
 .author {
-  line-height: 26px;
+  display: flex;
+  justify-content: center;
   color: $title-color;
 }
+
+.author__title {
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 10px;
+}
+
+.author__link {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+.author__img {
+  width: 45px;
+  height: 45px;
+  fill: black;
+
+  &:hover {
+    fill: $blue;
+  }
+
+  &:active {
+    fill: #b2b2b2;
+  }
+}
+
+
+//TABLET WIDTH
+@media #{$tablet-width} {
+  .author__title {
+    margin-right: 0;
+  }
+}
+
+//PC WIDTH
+@media #{$desktop-width} {
+  .author {
+    width: 25%;
+    box-sizing: border-box;
+    padding-left: 93px;
+  }
+
+  .author__title {
+    margin-right: 5px;
+  }
+}
+
