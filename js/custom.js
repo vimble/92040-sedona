@@ -34,7 +34,7 @@ function initialize() {
     rotateControl: false
   }
   var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-  var image = "../img/icon-map-marker.svg";
+  var image = "img/icon-map-marker.svg";
   var beachMarker = new google.maps.Marker({
     position: myLatlng,
     map: map,
