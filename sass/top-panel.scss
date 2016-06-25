@@ -13,12 +13,23 @@
   transform: translateX(-50%);
 }
 
+.mobile-hidden {
+  display: none;
+}
+
 @media #{$tablet-width} {
   .top-panel {
     position: static;
     min-height: auto;
   }
 
+  .tablet-show {
+    display: inline-block;
+  }
+}
 
-
+@media #{$desktop-width} {
+  .desktop-show {
+    display: inline-block;
+  }
 }
