@@ -23,7 +23,7 @@ navToggle.addEventListener('click', function(event) {
 });
 
 function initialize() {
-  var myLatlng = new google.maps.LatLng(34.9229592,-112.0479171);
+  var myLatlng = new google.maps.LatLng(34.88692,-111.729314);
   var myOptions = {
     zoom: 7,
     center: myLatlng,
@@ -34,10 +34,11 @@ function initialize() {
     rotateControl: false
   }
   var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-  var image = "../img/icon-map-marker.svg";
+  var image = "img/icon-map-marker.svg";
   var beachMarker = new google.maps.Marker({
     position: myLatlng,
     map: map,
+    title: "Sedona",
     icon: image
   });
 }

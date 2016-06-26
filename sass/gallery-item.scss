@@ -66,24 +66,18 @@
 //TABLET WIDTH
 @media #{$tablet-width} {
 
-    //tmp height
-  .gallery-item img {
-    max-height: 267px;
-  }
-
   .gallery-item {
     position: relative;
     width: 50%;
     padding: 0;
     margin-bottom: 0;
 
-    &--fullwidth {
-      width: 100%;
+    &:after {
+      border: 0;
     }
 
-    //tmp height
-    &--fullwidth img {
-      max-height: 400px;
+    &--fullwidth {
+      width: 100%;
     }
   }
 
@@ -143,6 +137,10 @@
     padding-right: 30px;
     color: white;
     background-color: rgba(0,0,0, 0.3);
+
+    &--fullwidth {
+      padding-right: 22px;
+    }
   }
 
   .gallery-item__likebtn {

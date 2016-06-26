@@ -5,6 +5,7 @@
   margin-bottom: 40px;
   text-align: center;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat center;
+  background-size: cover;
 
   &:after {
     content: "";
@@ -22,6 +23,7 @@
   &--photo {
     min-height: 153px;
     background-position: center bottom;
+    background-size: initial;
   }
 }
 
@@ -39,6 +41,19 @@
   }
 }
 
+@media #{$retina} {
+  .promo {
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat center;
+    background-size: cover;
+
+    &--form,
+    &--photo {
+      background-position: center bottom;
+      background-size: 200% auto;
+    }
+  }
+}
+
 //TABLET WIDTH
 @media #{$tablet-width} {
 	.promo {
@@ -50,16 +65,24 @@
 
 
     &:after {
-      display: none;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 57px;
+      background: url("../img/bg-intro-triangle-tablet.svg") no-repeat;
+      background-size: 100% 57px;
     }
 
     &--photo {
-      min-height: 290px; //tmp height
+      min-height: 290px;
       margin-bottom: 75px;
     }
 
     &--form {
-      min-height: 290px; //tmp height
+      min-height: 290px;
       margin-bottom: 75px;
     }
 	}
@@ -81,13 +104,26 @@
 //DESKTOP WIDTH
 @media #{$desktop-width} {
   .promo {
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -1px;
+      right: 0;
+      width: 100.1%;
+      height: 57px;
+      background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
+      background-size: 100% 57px;
+    }
+
     &--form {
-      min-height: 300px; //tmp height
+      min-height: 300px;
       margin-bottom: 112px;
     }
 
     &--photo {
-      min-height: 300px; //tmp height
+      min-height: 300px;
       margin-bottom: 112px;
     }
   }
@@ -95,6 +131,13 @@
   .promo__textimage {
     &--innerpage {
       padding-top: 100px;
+    }
+  }
+
+  @media #{$retina} {
+    .promo {
+      background: url("../img/bg-back-desktop@2x.jpg") no-repeat center;
+      background-size: cover;
     }
   }
 }
