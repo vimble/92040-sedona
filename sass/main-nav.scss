@@ -24,7 +24,7 @@
   text-decoration: none;
   text-align: center;
   color: white;
-  background: $blue;
+  background-color: $blue;
   box-shadow: 0 0px 0 1px #9ac2db,
               0 -1px 0 1px #678fa8;
 
@@ -68,7 +68,8 @@
     vertical-align: center;
   }
 
-  .main-nav__item:nth-child(2) {
+  .main-nav__item:nth-child(2),
+  .main-nav__item:nth-child(6) {
     margin-right: 20%;
   }
 

@@ -21,14 +21,17 @@
 
 .find-hotel__btn {
   display: inline-block;
+  max-width: 280px;
   padding: 16px 47px;
   margin-bottom: 50px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-decoration: none;
+  vertical-align: top;
   background-color: $blue;
   color: white;
+  box-sizing: border-box;
 }
 
 .find-hotel__map {
@@ -58,8 +61,10 @@
   }
 
   .find-hotel__btn {
+    max-width: 460px;
     padding: 16px 135px;
     margin-bottom: 55px;
+    box-sizing: border-box;
   }
 
   .find-hotel__map {
