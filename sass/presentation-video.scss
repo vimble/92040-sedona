@@ -3,13 +3,13 @@
   width: 100%;
   min-height: 200px;
   height: auto;
-  background: grey url("../img/video-mobile@1x.jpg") no-repeat;
-  background-size: contain;
+  background: #a27c75 url("../img/video-mobile@1x.jpg") no-repeat;
+  background-size: 100% 200px;
 }
 
 @media #{$retina} {
   .presentation-videoplayer {
-    background: grey url("../img/video-mobile@2x.jpg") no-repeat;
+    background: #a27c75 url("../img/video-mobile@2x.jpg") no-repeat;
     background-size: 100% 200px;
   }
 }
@@ -23,12 +23,13 @@
 
   .presentation-videoplayer {
     min-height: 500px;
-    background: grey url("../img/video-tablet@1x.jpg") no-repeat;
+    background: #a27c75 url("../img/video-tablet@1x.jpg") no-repeat;
+    background-size: 100% 500px;
   }
 
   @media #{$retina} {
     .presentation-videoplayer {
-      background: grey url("../img/video-tablet@2x.jpg") no-repeat;
+      background: #a27c75 url("../img/video-tablet@2x.jpg") no-repeat;
       background-size: 100% 500px;
     }
   }
@@ -42,12 +43,12 @@
 
   .presentation-videoplayer {
     min-height: 500px;
-    background: grey url("../img/video-desktop@1x.jpg") no-repeat;
+    background: #a27c75 url("../img/video-desktop@1x.jpg") no-repeat;
   }
 
   @media #{$retina} {
     .presentation-videoplayer {
-      background: grey url("../img/video-desktop@2x.jpg") no-repeat;
+      background: #a27c75 url("../img/video-desktop@2x.jpg") no-repeat;
       background-size: 100% 500px;
     }
   }
