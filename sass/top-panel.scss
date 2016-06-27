@@ -13,6 +13,11 @@
   transform: translateX(-50%);
 }
 
+.top-panel__image {
+  width: 101.668px;
+  height: 83.984px;
+}
+
 .mobile-hidden {
   display: none;
 }
@@ -20,16 +25,33 @@
 @media #{$tablet-width} {
   .top-panel {
     position: static;
-    min-height: auto;
+    min-height: 0;
+  }
+
+  .tablet-hidden {
+    display: none;
   }
 
   .tablet-show {
     display: inline-block;
+    vertical-align: top;
   }
 }
 
 @media #{$desktop-width} {
+  .desktop-hidden {
+    display: none;
+  }
+
   .desktop-show {
     display: inline-block;
+    vertical-align: top;
+  }
+
+  .top-panel__image {
+    &--desktop {
+      width: 186.643px;
+      height: 96.425px;
+    }
   }
 }

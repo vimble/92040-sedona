@@ -30,6 +30,7 @@
 
 .feedback-form__caption {
   @include noindent();
+  margin: 0 auto;
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 700;
@@ -81,6 +82,7 @@
   line-height: 26px;
 
   &--left {
+    flex-shrink: 0;
     margin-right: 20px;
   }
 
@@ -99,6 +101,7 @@
     line-height: 26px;
     font-weight: 700;
     text-transform: none;
+    vertical-align: top;
     color: $title-color;
     cursor: pointer;
 
@@ -135,6 +138,7 @@
     line-height: 26px;
     font-weight: 700;
     text-transform: none;
+    vertical-align: top;
     color: $title-color;
     cursor: pointer;
 
@@ -199,6 +203,7 @@
 
 .feedback-form__input {
   width: 100%;
+  min-height: 26px;
   padding: 16px 20px;
   font-size: 18px;
   font-weight: 700;
@@ -307,6 +312,7 @@
 
 .feedback-form__submit {
   width: 100%;
+  max-width: 280px;
   padding: 16px 47px;
   font-size: 21px;
   font-weight: 700;
@@ -315,6 +321,7 @@
   color: white;
   background-color: $blue;
   border: 0;
+  box-sizing: border-box;
   outline: 0;
   cursor: pointer;
 }
@@ -348,25 +355,29 @@
     &--width {
       width: 41%;
       padding-bottom: 0;
-      margin-bottom: 68px;
+      margin-bottom: 80px;
     }
 
     &--order {
       order: -1;
       padding-bottom: 0;
-      margin-bottom: 70px;
+      margin-bottom: 85px;
       border-right: 1px solid #e5e5e5;
     }
 
     &--fullwidth {
-      padding-bottom: 0;
-      margin-bottom: 28px;
       width: 100%;
+      padding-bottom: 0;
+      margin-bottom: 43px;
       border-top: 1px solid #e5e5e5;
     }
 
     &--checkbox {
-      margin-bottom: 35px;
+      margin-bottom: 50px;
+    }
+
+    &--textarea {
+      margin-bottom: 27px;
     }
   }
 
@@ -382,16 +393,18 @@
   }
 
   .feedback-form__caption {
-    display: inline-block;
     margin-bottom: 58px;
     font-size: 21px;
 
     &--center {
-      display: block;
+      margin-top: -15px;
       width: 400px;
-      padding: 0 60px;
-      margin: 0 auto;
       margin-bottom: 23px;
+      background-color: white;
+    }
+
+    &--left {
+      text-align: left;
     }
 
     &--checkbox {
@@ -454,6 +467,8 @@
 
   .feedback-form__submit {
     width: 50%;
+    max-width: 480px;
+    box-sizing: border-box;
   }
 
   .feedback-form__hint {
@@ -466,6 +481,7 @@
 @media #{$desktop-width} {
   .desktop-show {
     display: inline-block;
+    vertical-align: top;
   }
 
   .desktop-hidden {
@@ -500,6 +516,10 @@
 
     &--center {
       margin-bottom: 70px;
+    }
+
+    &--padding {
+      padding-left: 0px;
     }
 
     &--checkbox {

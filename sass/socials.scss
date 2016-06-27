@@ -16,8 +16,9 @@
 }
 
 .socials__link {
-  display: block;
+  display: inline-block;
   width: 46px;
+  max-width: 50px;
   height: 48px;
   padding-top: 15px;
   box-sizing: border-box;
@@ -34,6 +35,24 @@
   &:active img {
     opacity: 0.3;
   }
+}
+
+.icon-twitter {
+  width: 17.5px;
+  height: 14.663px;
+  fill: white;
+}
+
+.icon-fb {
+  width: 8.672px;
+  height: 18.944px;
+  fill: white;
+}
+
+.icon-youtube {
+  width: 19.979px;
+  height: 14.015px;
+  fill: white;
 }
 
 //TABLET WIDTH
